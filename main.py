@@ -32,9 +32,9 @@ for ring in range(rings_num):
     pen.down()
     # draw a ring
     for i in range(6):
-        pen.fillcolor(colors[i % len(colors)])
         # big hexagon side
         for side_hexagon in range(ring + 1):
+            pen.fillcolor(colors[side_hexagon % len(colors)])
             hexagon(hexagon_len)
             pen.up()
             pen.fd(hexagon_len)
