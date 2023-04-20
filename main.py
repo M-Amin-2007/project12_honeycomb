@@ -7,3 +7,5 @@ def hexagon(side_length):
     for side in range(6):
         pen.fd(side_length)
         pen.left(60)
+
+screen.exitonclick()
