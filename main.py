@@ -7,8 +7,8 @@ screen = turtle.Screen()
 # initialize settings
 pen.speed(-1)
 pen.width(3)
-pen.ht()
-pen.color("white", "white")
+# pen.ht()
+pen.color("black", "white")
 colors = ["red", "blue", "orange", "#E43AC2", "gold", "light green"]
 # variables
 rings_num = int(turtle.numinput("number of rings", "input an integer: "))
