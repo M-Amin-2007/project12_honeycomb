@@ -25,7 +25,6 @@ def hexagon(side_length):
 hexagon(hexagon_len)
 for ring in range(rings_num):
     # transform between rings
-    pen.fillcolor(colors[ring % len(colors)])
     pen.up()
     pen.right(90)
     pen.fd(hexagon_len * tan(radians(60)))
@@ -33,6 +32,7 @@ for ring in range(rings_num):
     pen.down()
     # draw a ring
     for i in range(6):
+        pen.fillcolor(colors[(ring + i) % len(colors)])
         # big hexagon side
         for side_hexagon in range(ring + 1):
             hexagon(hexagon_len)
