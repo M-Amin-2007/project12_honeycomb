@@ -34,7 +34,7 @@ for ring in range(rings_num):
     for i in range(6):
         # big hexagon side
         for side_hexagon in range(ring + 1):
-            pen.fillcolor(colors[(side_hexagon + i) % len(colors)])
+            pen.fillcolor(colors[(side_hexagon + i + ring) % len(colors)])
             hexagon(hexagon_len)
             pen.up()
             pen.fd(hexagon_len)
