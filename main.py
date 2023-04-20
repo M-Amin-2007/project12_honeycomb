@@ -1,5 +1,6 @@
 """write by: M. Amin"""
 import turtle
+from math import tan, radians
 # objects
 pen = turtle.Pen()
 screen = turtle.Screen()
@@ -15,6 +16,13 @@ def hexagon(side_length):
 # execute part
 hexagon(hexagon_len)
 for ring in range(rings_num):
+    # transform between rings
+    pen.up()
+    pen.right(90)
+    pen.fd(hexagon_len * tan(radians(60)))
+    pen.left(90)
+    pen.down()
+    # draw a ring
     for i in range(6):
         # big hexagon side
         for side_hexagon in range(ring + 1):
