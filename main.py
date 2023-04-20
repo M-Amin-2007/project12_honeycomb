@@ -15,9 +15,11 @@ hexagon_len = int(turtle.numinput("hexagon side length", "input an integer: "))
 # functions
 def hexagon(side_length):
     """a function to draw a hexagon."""
+    pen.begin_fill()
     for side in range(6):
         pen.fd(side_length)
         pen.left(60)
+    pen.end_fill()
 # execute part
 hexagon(hexagon_len)
 for ring in range(rings_num):
