@@ -8,8 +8,8 @@ screen = turtle.Screen()
 pen.speed(-1)
 pen.width(3)
 pen.ht()
-pen.color("white", "blue")
-colors = ["red", "blue", "green", "gray", "gold", "orange"]
+pen.color("white", "white")
+colors = ["red", "blue", "orange", "#E43AC2", "gold", "light green"]
 # variables
 rings_num = int(turtle.numinput("number of rings", "input an integer: "))
 hexagon_len = int(turtle.numinput("hexagon side length", "input an integer: "))
