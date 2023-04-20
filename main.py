@@ -24,7 +24,11 @@ for ring in range(rings_num):
         pen.fd(hexagon_len)
         pen.right(60)
         pen.down()
-
+    # big hexagon corner
+    hexagon(hexagon_len)
+    pen.up()
+    pen.left(60)
+    pen.bk(hexagon_len)
 
 
 screen.exitonclick()
